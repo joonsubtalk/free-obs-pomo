@@ -1,0 +1,104 @@
+.app {
+  & {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1em;
+  }
+  &__cog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 1em;
+  }
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    mask-image: -webkit-gradient(linear, right top, right bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+  
+  &__img {
+    width: 100%;
+  }
+  button &__wheel{
+    background-color: #f0f0f0;
+    border: none;
+  }
+  &__button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.settings {
+  & {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__container {
+    padding: 1em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+  }
+  &__button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+  &__input {
+    width: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+  &__label {
+    font-size: .75rem;
+  }
+}

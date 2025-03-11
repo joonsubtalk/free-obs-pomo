@@ -1,0 +1,13 @@
+.clock {
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    &__digit {
+        font-size: 4rem;
+        font-family: "Work Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: bold;
+    }
+}
